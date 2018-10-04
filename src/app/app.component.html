@@ -1,0 +1,8 @@
+<input type="file" (change)=fileEvent($event)/>
+
+<div *ngFor="let file of fileUploads">
+  {{file.name}}
+
+<button (click)="deletes3files(file.name)">Delete
+</button>
+</div>
